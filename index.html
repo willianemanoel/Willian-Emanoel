@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willian Emanoel - Portfólio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <div class="logo">WEADA</div>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="destaque">
+        <div class="container">
+            <div class="conteudo-destaque">
+                <h1>Prazer, eu sou o <span>Willian Emanoel</span></h1>
+                <p class="subtitulo">Estudante de Análise e Desenvolvimento de Sistemas</p>
+                <div class="botoes">
+                    <a href="#contato" class="botao">Entrar em contato</a>
+                    <a href="https://drive.google.com/uc?export=download&id=1Hxl1H5yumQmRrCQK-B_HhedwLWvCA7-7" download class="botao botao-secundario">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="conteudo-sobre">
+                <p>Atualmente atuo como assistente no setor de CPD, com foco na parte gerencial de TI da empresa Dinatecnica LTDA. Tenho experiência em análise de dados utilizando Excel e Power BI, apoiando usuários com menor familiaridade nessas ferramentas e contribuindo para a tomada de decisões estratégicas. Além disso, quando necessário, também presto suporte técnico. Sou estudante de Análise e Desenvolvimento de Sistemas, formado em Gestão da Tecnologia da Informação e apaixonado por tecnologia, sempre em busca de soluções que otimizem processos e melhorem a eficiência da área.
+
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="habilidades" class="habilidades">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="grade-habilidades">
+                <div class="item-habilidade">
+                    <i class="fas fa-chart-bar"></i>
+                    <p>Power BI</p>
+                </div>
+                <div class="item-habilidade">
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="item-habilidade">
+                    <i class="fas fa-headset"></i>
+                    <p>Suporte Técnico</p>
+                </div>
+                <div class="item-habilidade">
+                    <i class="fab fa-java"></i>
+                    <p>Java</p>
+                </div>
+                <div class="item-habilidade">
+                    <i class="fas fa-database"></i>
+                    <p>Banco de Dados (DBS)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="grade-projetos">
+                
+                <div class="card-projeto" onclick="window.open('https://www.figma.com/proto/7SJd3GMWPWhdWDv21DJyXD/Untitled?node-id=67-6&starting-point-node-id=67%3A6', '_blank')">
+                    <div class="imagem-projeto">
+                        <img src="/img/portfolio-figma.png" alt="Portfólio Figma">
+                    </div>
+                    <h3>Portfólio Figma</h3>
+                </div>
+                
+                
+                <div class="card-projeto" onclick="window.open('https://www.figma.com/proto/2gPwVxxqCJj9C9OZCNa7AY/Untitled?node-id=2-19&starting-point-node-id=2%3A19', '_blank')">
+                    <div class="imagem-projeto">
+                        <img src="/img/social-timao.png" alt="Projeto SocialTimão">
+                    </div>
+                    <h3>Social Timão</h3>
+                </div>
+
+                <div class="card-projeto" onclick="window.open('https://www.linkedin.com/posts/willianemanoel_2%C2%BA-hackathon-unifecaf-durante-o-2%C2%BA-activity-7123004129488084993-qf1r?utm_source=share&utm_medium=member_desktop&rcm=ACoAADLOMUoBbnIRyl6ICZLfR5RIonyg72BkZ3E', '_blank')">
+                    <div class="imagem-projeto">
+                        <img src="/img/BrainsWave.png" alt="BrainsWave - Hackatoon UniFecaf">
+                    </div>
+                    <h3>BrainsWave - Hackatoon UniFecaf</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+            document.querySelectorAll('.card-projeto').forEach(projeto => {
+            projeto.style.cursor = 'pointer';
+            
+        
+            projeto.addEventListener('mouseenter', () => {
+                projeto.style.transform = 'translateY(-5px)';
+                projeto.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+            });
+            
+            projeto.addEventListener('mouseleave', () => {
+                projeto.style.transform = '';
+                projeto.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.05)';
+            });
+        });
+    </script>
+</body>
+</html>
+
+<section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="info-contato">
+                <div class="item-contato" onclick="window.location.href='https://wa.me/5511965283659'">
+                    <i class="fas fa-phone"></i>
+                    <p>11 96528-3659</p>
+                </div>
+                <div class="item-contato" onclick="window.location.href='https://linkedin.com/in/willianemanoel'">
+                    <i class="fab fa-linkedin"></i>
+                    <p>@willianemanoel</p>
+                </div>
+                <div class="item-contato" onclick="window.location.href='https://instagram.com/uiuzum'">
+                    <i class="fab fa-instagram"></i>
+                    <p>@uiuzum</p>
+                </div>
+                <div class="item-contato" onclick="window.location.href='mailto:Willian.194123@gmail.com'">
+                    <i class="fas fa-envelope"></i>
+                    <p>Willian.194123@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2025 Willian Emanoel</p>
+        </div>
+    </footer>
+
+    <script>
+        // cursor para indicar que é clicavel_teste 
+        document.querySelectorAll('.item-contato').forEach(item => {
+            item.style.cursor = 'pointer';
+        });
+    </script>
+</body>
+</html>

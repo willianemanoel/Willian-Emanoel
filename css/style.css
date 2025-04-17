@@ -1,0 +1,307 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.navegacao ul {
+    display: flex;
+    list-style: none;
+}
+
+.navegacao ul li {
+    margin-left: 2rem;
+}
+
+.navegacao ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navegacao ul li a:hover {
+    color: #3498db;
+}
+
+/* Seção Destaque */
+.destaque {
+    padding: 10rem 0 5rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    text-align: center;
+}
+
+.destaque h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.destaque h1 span {
+    color: #3498db;
+}
+
+.destaque .subtitulo {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.botao {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.botao:hover {
+    background-color: #2980b9;
+}
+
+.botao-secundario {
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+}
+
+.botao-secundario:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.conteudo-sobre p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Seção Habilidades */
+.habilidades {
+    padding: 5rem 0;
+    background-color: #f5f7fa;
+}
+
+.grade-habilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.item-habilidade {
+    background-color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    font-weight: 600;
+    transition: transform 0.3s;
+}
+
+.item-habilidade i {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.item-habilidade:hover {
+    transform: translateY(-5px);
+}
+
+/* Seção Projetos */
+.grade-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card-projeto {
+    background-color: #f5f7fa;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.card-projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-projeto {
+    height: 150px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.imagem-projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-projeto:hover .imagem-projeto img {
+    transform: scale(1.05);
+}
+
+.card-projeto h3 {
+    color: #2c3e50;
+    margin-top: 0.5rem;
+}
+
+/* Seção Contato */
+.contato {
+    padding: 5rem 0;
+    background-color: #f5f7fa;
+}
+
+.info-contato {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.item-contato {
+    background-color: white;
+    padding: 1.2rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.item-contato:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.item-contato i {
+    font-size: 1.3rem;
+    color: #3498db;
+    min-width: 25px;
+}
+
+.item-contato p {
+    margin: 0;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+
+/* Rodapé */
+.rodape {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .cabecalho .container {
+        flex-direction: column;
+    }
+
+    .navegacao ul {
+        margin-top: 1rem;
+    }
+
+    .navegacao ul li {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .destaque {
+        padding: 8rem 0 4rem;
+    }
+
+    .destaque h1 {
+        font-size: 2rem;
+    }
+
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 1rem;
+    }
+}
